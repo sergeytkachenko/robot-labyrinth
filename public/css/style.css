@@ -1,0 +1,39 @@
+table {
+    font-size: 0.8em;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+table td {
+    border: 1px solid #cdcdcd;
+    width: 8px;
+    height: 8px;
+    vertical-align: middle;
+    padding: 3px;
+    position: relative;
+    overflow: hidden;
+}
+
+table td i {
+    display: block;
+}
+
+table td i::after {
+    content: '*';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+td.start {
+    background-color: green;
+}
+
+td.finish {
+    background-color: darkred;
+}
+
+td.current {
+    background-color: yellow;
+}

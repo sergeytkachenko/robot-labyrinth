@@ -16,6 +16,7 @@ class FrontController {
 
     public function dispatch()  {
         try {
+
             $result = $this->executeControllerAction($this->request->module, $this->request->controller, $this->request->action);
             $page = $this->response->send($result);
             return $page;

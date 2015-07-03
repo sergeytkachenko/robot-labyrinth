@@ -1,10 +1,12 @@
 <?php
-namespace Core;
+namespace Labyrinth;
+use Core\Exception;
 
-class Exception extends \Exception{
+class MoveException extends Exception{
     public $reason;
 
     public function __construct($message, Exception $reason = null) {
+
         if ($reason) {
             $message .= ' --> ' . $reason->getMessage();
         }

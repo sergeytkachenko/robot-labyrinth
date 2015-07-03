@@ -6,5 +6,12 @@ define('APPLICATION_PATH', PUBLIC_PATH . '/app/');
 require_once 'debug.php';
 require_once 'autoload.php';
 
-$app = new \Core\Application();
-$app->run();
+try {
+    $app = new \Core\Application();
+    $app->run();
+
+} catch (Exception $e) {
+    throw $e;
+}
+
+

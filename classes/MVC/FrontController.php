@@ -3,7 +3,7 @@
 namespace MVC;
 
 use Core\Utils;
-use Exception;
+use \Core\Exception;
 
 class FrontController {
     public $request;

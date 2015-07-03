@@ -1,6 +1,5 @@
 <?php
 namespace Core;
-use Exception;
 
 class Registry {
 	static protected $_registry = array();

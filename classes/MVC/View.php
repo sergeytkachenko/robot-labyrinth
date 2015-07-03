@@ -1,7 +1,7 @@
 <?php
 namespace MVC;
 
-use Exception;
+use \Core\Exception;
 
 class View {
 

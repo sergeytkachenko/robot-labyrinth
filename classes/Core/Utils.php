@@ -1,6 +1,5 @@
 <?php
 namespace Core;
-use Exception;
 
 abstract class Utils {
 

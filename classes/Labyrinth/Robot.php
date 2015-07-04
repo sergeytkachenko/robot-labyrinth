@@ -30,7 +30,8 @@ abstract class Robot {
     private function back () {
         $cell = array_pop($this->historyCells);
         if(!$cell) {
-            throw new MoveException('robot nowhere to go, has reached the end');
+            //throw new MoveException('robot nowhere to go, has reached the end');
+            return;
         }
         $this->currentCell = $cell;
         $this->absoluteHistoryCells[] = $this->currentCell;
